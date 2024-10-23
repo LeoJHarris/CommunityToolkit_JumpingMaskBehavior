@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="CommunityToolkit_JumpingMaskBehavior.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+    <ScrollView Margin="16">
+
+        <Entry
+            Keyboard="Numeric"
+            ReturnType="Next"
+            VerticalOptions="Start">
+            <Entry.Behaviors>
+                <toolkit:MaskedBehavior Mask="XXXX XXX XXX" />
+            </Entry.Behaviors>
+        </Entry>
+    </ScrollView>
+</ContentPage>
